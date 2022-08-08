@@ -17,13 +17,11 @@ def cool_form():
 
 @app.route("/login",methods = ["GET", "POST"])
 def driver_login():
-    hint = "please login"
-    return render_template("login.html", hint=hint)
+    return render_template("login.html")
 
 @app.route("/register", methods = ["GET", "POST"])
 def driver_register():
-    hint = "please register"
-    return render_template("register.html", hint=hint)
+    return render_template("register.html")
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0")
